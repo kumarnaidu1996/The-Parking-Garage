@@ -23,6 +23,7 @@ The Parking class includes the following functions,
 ### Main.py 
 This is where all the above mentioned files have been imported to and run the final function main(). 
 Since the program is designed having an intention that it would run 24/7 on the server, we need to run (only once) these two lines of code *garage = Parking() & garage.create_parking_lot_table()* before we run main() functio from Main.py. 
+I have uploaded ipynb file which includes all lines of code. Incase you are familiar with jupyter notebook, you can run The_Parking_garage_Kumar.ipynb file.
 
 ### Further Development
 I need to deploy it in the server and make it run over there. Also, I need to connect backup function to take backup of the data everyday at a specific time. 
