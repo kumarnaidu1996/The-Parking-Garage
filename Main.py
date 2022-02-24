@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import numpy as np
 
-from MangoDB import Mangodb
+from MongoDB import Mongodb
 from Vehicle_Class import Vehicle
 from Parking_Garage import Parking
 
@@ -31,8 +31,8 @@ def check_out_for_main():
 
         bill['parking_duration_in_hr'] = bill['parking_duration'].seconds / 3600
         bill.pop('parking_duration')
-        db = Mangodb()
-        db.data_upload_to_mangodb(bill)
+        db = Mongodb()
+        db.data_upload_to_mongodb(bill)
 
 # Run garage.create_parking_lot_table() only once to create a parking table
 
